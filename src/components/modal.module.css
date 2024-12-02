@@ -1,0 +1,30 @@
+.modal {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction:column;
+  background-color: white;
+  padding: 2rem;
+}
+
+.content p {
+  font-size: 6rem;
+}
+
+.content button {
+  padding: 0.5rem 1rem;
+}
