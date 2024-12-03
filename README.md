@@ -11,11 +11,12 @@ Use binary search to find the commit that introduced a bug/new functionality.
 1. `git bisect start` - begin the bisect process
 2. `git bisect bad` - mark current commit as "bad"
 3. `git bisect good [branch|commit]` - mark a good commit
-4. Git will automatically choose a commit in the middle of the range and check it out for you. 
+  - i.e. `07c53071469473f16950bf2c2607c455d65b7197` in this repo
+4. Git will automatically choose a commit in the middle of the range and check it out for you.
 5. Mark this new state with `git bisect bad` or `git bisect good` and Git will update the range automatically and check out a new commit for you
 6. Keep repeating step 5 until git tells you the bad commit (which for the repo demo would be `65842324a2ceb59412ee55fdc1b81d201bcd70a2`)
 7. `git bisect reset` - end the process and return to the original commit before `git bisect start`
-    - if you forget to do this and run other Git commands, you will run into errors
+   - if you forget to do this and run other Git commands, you will probably run into errors
 
 Can also use `git bisect run shell-script.sh` to further automate the tracing process where `shell-script.sh` exits with code 0 (success) or some other code like 1 (error) to mark commits as good/bad.
 
