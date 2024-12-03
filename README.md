@@ -24,3 +24,5 @@ Can also use `git bisect run shell-script.sh` to further automate the tracing pr
 Depending on the type of bug and the complexity of the related feature, `git bisect` might not be necessary. If the context is obvious, `git blame`, looking through PRs on GitHub, or even checking Sentry telemetry to find the first occurrence of a related error in test environments may be more efficient in tracing the origin.
 
 If there are many moving parts and/or a lot of commits/time has elapsed between a "good" and the "bad" state, then `git bisect` is a handy asset to know.
+
+## Creating commits 1
