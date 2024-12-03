@@ -4,7 +4,7 @@ import { WelcomeModal } from './components/Modal';
 import './app.css';
 
 const App = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <main>
