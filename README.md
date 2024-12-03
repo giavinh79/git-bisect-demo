@@ -25,4 +25,4 @@ Depending on the type of bug and the complexity of the related feature, `git bis
 
 If there are many moving parts and/or a lot of commits/time has elapsed between a "good" and the "bad" state, then `git bisect` is a handy asset to know.
 
-## Creating commits 111111111111111111111111111111111111111111111111
+## Creating commits 1111111111111111111111111111111111111111111111111
